@@ -1,0 +1,39 @@
+{
+  "name": "hapi-auth-bearer",
+  "description": "A Hapi.js Bearer authentication plugin",
+  "version": "1.0.0",
+  "author": "Jordan Stout <j@jrdn.org>",
+  "repository": "git://github.com/j/hapi-auth-bearer",
+  "main": "index",
+  "keywords": [
+    "hapi",
+    "plugin",
+    "auth",
+    "bearer"
+  ],
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "boom": "2.x.x",
+    "hoek": "1.x.x",
+    "hawk": "2.x.x"
+  },
+  "peerDependencies": {
+    "hapi": "2.x.x"
+  },
+  "devDependencies": {
+    "hapi": "2.x.x",
+    "mocha": "1.17.x",
+    "istanbul": "0.2.x"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "http://github.com/j/hapi-auth-bearer/raw/master/LICENSE"
+    }
+  ]
+}

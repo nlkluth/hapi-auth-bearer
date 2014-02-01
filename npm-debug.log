@@ -1,0 +1,159 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/JRDN/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz
+12 verbose folder .
+13 info prepublish hapi-auth-bearer@1.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/JRDN/.npm/1f1177db-tar.lock
+16 silly lockFile a2bb973d-9724-0-39238951494917274-tmp-tgz tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz
+17 verbose lock tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz /Users/JRDN/.npm/a2bb973d-9724-0-39238951494917274-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile a2bb973d-9724-0-39238951494917274-tmp-tgz tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz
+21 silly lockFile a2bb973d-9724-0-39238951494917274-tmp-tgz tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz
+22 verbose tar unpack /var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz
+23 silly lockFile 2f66e76b-9724-0-39238951494917274-package tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package
+24 verbose lock tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package /Users/JRDN/.npm/2f66e76b-9724-0-39238951494917274-package.lock
+25 silly lockFile a2bb973d-9724-0-39238951494917274-tmp-tgz tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz
+26 verbose lock tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz /Users/JRDN/.npm/a2bb973d-9724-0-39238951494917274-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry LICENSE
+32 silly gunzTarPerm extractEntry index.js
+33 silly gunzTarPerm extractEntry Makefile
+34 silly gunzTarPerm extractEntry .idea/.name
+35 silly gunzTarPerm extractEntry .idea/encodings.xml
+36 silly gunzTarPerm extractEntry .idea/hapi-auth-bearer.iml
+37 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+38 silly gunzTarPerm extractEntry .idea/misc.xml
+39 silly gunzTarPerm extractEntry .idea/modules.xml
+40 silly gunzTarPerm extractEntry .idea/scopes/scope_settings.xml
+41 silly gunzTarPerm extractEntry .idea/vcs.xml
+42 silly gunzTarPerm extractEntry .idea/workspace.xml
+43 silly gunzTarPerm extractEntry lib/index.js
+44 silly gunzTarPerm extractEntry .travis.yml
+45 silly gunzTarPerm extractEntry test/index.test.js
+46 silly lockFile 2f66e76b-9724-0-39238951494917274-package tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package
+47 silly lockFile 2f66e76b-9724-0-39238951494917274-package tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package
+48 silly lockFile a2bb973d-9724-0-39238951494917274-tmp-tgz tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz
+49 silly lockFile a2bb973d-9724-0-39238951494917274-tmp-tgz tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/tmp.tgz
+50 verbose tar pack [ '/Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz',
+50 verbose tar pack   '/var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package' ]
+51 verbose tarball /Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz
+52 verbose folder /var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package
+53 silly lockFile 2f66e76b-9724-0-39238951494917274-package tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package
+54 verbose lock tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package /Users/JRDN/.npm/2f66e76b-9724-0-39238951494917274-package.lock
+55 silly lockFile 0a460884-pi-auth-bearer-1-0-0-package-tgz tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz
+56 verbose lock tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz /Users/JRDN/.npm/0a460884-pi-auth-bearer-1-0-0-package-tgz.lock
+57 silly lockFile 2f66e76b-9724-0-39238951494917274-package tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package
+58 silly lockFile 2f66e76b-9724-0-39238951494917274-package tar:///var/folders/br/jxnnwz7j3mzcnbbxtd_hyslc0000gn/T/npm-2783-buPnWQeE/1391217879724-0.39238951494917274/package
+59 silly lockFile 0a460884-pi-auth-bearer-1-0-0-package-tgz tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz
+60 silly lockFile 0a460884-pi-auth-bearer-1-0-0-package-tgz tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz
+61 silly lockFile f6cbafa7-m-hapi-auth-bearer-1-0-0-package /Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package
+62 verbose lock /Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package /Users/JRDN/.npm/f6cbafa7-m-hapi-auth-bearer-1-0-0-package.lock
+63 silly lockFile f6cbafa7-m-hapi-auth-bearer-1-0-0-package /Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package
+64 silly lockFile f6cbafa7-m-hapi-auth-bearer-1-0-0-package /Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package
+65 verbose tar unpack /Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz
+66 silly lockFile fb01303c-m-hapi-auth-bearer-1-0-0-package tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package
+67 verbose lock tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package /Users/JRDN/.npm/fb01303c-m-hapi-auth-bearer-1-0-0-package.lock
+68 silly lockFile 0a460884-pi-auth-bearer-1-0-0-package-tgz tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz
+69 verbose lock tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz /Users/JRDN/.npm/0a460884-pi-auth-bearer-1-0-0-package-tgz.lock
+70 silly gunzTarPerm modes [ '755', '644' ]
+71 silly gunzTarPerm extractEntry package.json
+72 silly gunzTarPerm extractEntry .npmignore
+73 silly gunzTarPerm extractEntry README.md
+74 silly gunzTarPerm extractEntry LICENSE
+75 silly gunzTarPerm extractEntry index.js
+76 silly gunzTarPerm extractEntry .idea/.name
+77 silly gunzTarPerm extractEntry .idea/encodings.xml
+78 silly gunzTarPerm extractEntry .idea/hapi-auth-bearer.iml
+79 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+80 silly gunzTarPerm extractEntry .idea/misc.xml
+81 silly gunzTarPerm extractEntry .idea/modules.xml
+82 silly gunzTarPerm extractEntry .idea/scopes/scope_settings.xml
+83 silly gunzTarPerm extractEntry .idea/vcs.xml
+84 silly gunzTarPerm extractEntry .idea/workspace.xml
+85 silly gunzTarPerm extractEntry .travis.yml
+86 silly gunzTarPerm extractEntry Makefile
+87 silly gunzTarPerm extractEntry lib/index.js
+88 silly gunzTarPerm extractEntry test/index.test.js
+89 silly lockFile fb01303c-m-hapi-auth-bearer-1-0-0-package tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package
+90 silly lockFile fb01303c-m-hapi-auth-bearer-1-0-0-package tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package
+91 silly lockFile 0a460884-pi-auth-bearer-1-0-0-package-tgz tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz
+92 silly lockFile 0a460884-pi-auth-bearer-1-0-0-package-tgz tar:///Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz
+93 verbose chmod /Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz 644
+94 verbose chown /Users/JRDN/.npm/hapi-auth-bearer/1.0.0/package.tgz [ 501, 20 ]
+95 silly lockFile 3a52ce78- .
+96 silly lockFile 3a52ce78- .
+97 silly publish { name: 'hapi-auth-bearer',
+97 silly publish   description: 'A Hapi.js Bearer authentication plugin',
+97 silly publish   version: '1.0.0',
+97 silly publish   author: { name: 'Jordan Stout', email: 'j@jrdn.org' },
+97 silly publish   repository: { type: 'git', url: 'git://github.com/j/hapi-auth-bearer' },
+97 silly publish   main: 'index',
+97 silly publish   keywords: [ 'hapi', 'plugin', 'auth', 'bearer' ],
+97 silly publish   engines: { node: '0.10.x' },
+97 silly publish   dependencies: { boom: '2.x.x', hoek: '1.x.x', hawk: '2.x.x' },
+97 silly publish   peerDependencies: { hapi: '2.x.x' },
+97 silly publish   devDependencies: { hapi: '2.x.x', mocha: '1.17.x', istanbul: '0.2.x' },
+97 silly publish   scripts: { test: 'make test' },
+97 silly publish   licenses:
+97 silly publish    [ { type: 'BSD',
+97 silly publish        url: 'http://github.com/j/hapi-auth-bearer/raw/master/LICENSE' } ],
+97 silly publish   readme: '### hapi-auth-bearer\n\n[![Build Status](https://travis-ci.org/j/hapi-auth-bearer.png?branch=master)](https://travis-ci.org/j/hapi-auth-bearer)\n\n#### Bearer authentication\n\nThis scheme requires the following options:\n\n- `validateFunc` - Function with signature `function(secretOrToken, callback)` where:\n    - `secretOrToken` - the `secret` if option `base64: true` is set, otherwise the raw token value is passed in.\n    - `callback` - the callback function with signature `function(err, credentials)` where:\n        - `err` - an internal error.\n        - `credentials` - a credentials object that gets passed back to the application in `request.auth.credentials`.\n          Return `null` or `undefined` to when the credentials are unknown (and not an error).  Also, credentials\n          object MUST contain a key `token` when using `base64: true` option so that we can validate the header\n          token from the token stored in the database. (This makes it so that you only need to index `secret` instead\n          of both `secret` and `token` for smaller storage.  Just simply do a find on secret, and pass back the token\n          value.\n\n- `base64` - Boolean value (defaults to `false` aka just accepts a raw token value).  This gives you the ability to pass\n back a base64 encoded authorization header: base64(SECRET:TOKEN)\n    - i.e.) Bearer NTJlYjRmZmRmM2M3MjNmZjA1MTEwYmYxOjk5ZWQyZjdmMWRiNjBiZDBlNGY1ZjQ4ZjRhMWVhNWVjMmE4NzU2ZmU=\n\n\n```javascript\nvar Hapi = require(\'hapi\');\nvar server = new Hapi.Server();\n\nvar credentials = {\n  // without base64\n  someSuperSecureToken: {\n    user: { /** ... */ }\n  },\n  // for base64\n  shhImASecret: {\n    token: \'someSuperSecureToken\',\n    user: { /** ... */ }\n  }\n};\n\nvar validateFunc = function (id, callback) {\n  return callback(null, credentials[id]);\n};\n\nserver.pack.require(\'hapi-auth-bearer\', function (err) {\n  server.auth.strategy(\'bearer\', \'bearer\', { validateFunc: validateFunc });\n\n  server.auth.strategy(\'bearer-base64\', \'bearer\', {\n    base64: true,\n    validateFunc: validateFunc\n  });\n});\n\n```',
+97 silly publish   readmeFilename: 'README.md',
+97 silly publish   bugs: { url: 'https://github.com/j/hapi-auth-bearer/issues' },
+97 silly publish   homepage: 'https://github.com/j/hapi-auth-bearer',
+97 silly publish   _id: 'hapi-auth-bearer@1.0.0',
+97 silly publish   dist: { shasum: '3bcdb00b2a4c8fe5e6848fcf3fba8e39b75277bf' },
+97 silly publish   _from: '.' }
+98 verbose url raw hapi-auth-bearer
+99 verbose url resolving [ 'https://registry.npmjs.org/', './hapi-auth-bearer' ]
+100 verbose url resolved https://registry.npmjs.org/hapi-auth-bearer
+101 info trying registry request attempt 1 at 17:24:39
+102 http PUT https://registry.npmjs.org/hapi-auth-bearer
+103 http 409 https://registry.npmjs.org/hapi-auth-bearer
+104 verbose url raw hapi-auth-bearer
+105 verbose url resolving [ 'https://registry.npmjs.org/', './hapi-auth-bearer' ]
+106 verbose url resolved https://registry.npmjs.org/hapi-auth-bearer
+107 info trying registry request attempt 1 at 17:24:40
+108 http GET https://registry.npmjs.org/hapi-auth-bearer
+109 http 200 https://registry.npmjs.org/hapi-auth-bearer
+110 error publish fail Cannot publish over existing version.
+110 error publish fail Update the 'version' field in package.json and try again.
+110 error publish fail
+110 error publish fail If the previous version was published in error, see:
+110 error publish fail     npm help unpublish
+110 error publish fail
+110 error publish fail To automatically increment version numbers, see:
+110 error publish fail     npm help version
+111 error System Darwin 13.0.0
+112 error command "node" "/usr/local/bin/npm" "publish"
+113 error cwd /Users/JRDN/PhpstormProjects/hapi-auth-bearer
+114 error node -v v0.10.24
+115 error npm -v 1.3.21
+116 error code EPUBLISHCONFLICT
+117 verbose exit [ 1, true ]
