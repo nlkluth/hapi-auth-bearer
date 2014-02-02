@@ -32,7 +32,7 @@
   },
   "licenses": [
     {
-      "type": "BSD",
+      "type": "MIT",
       "url": "http://github.com/j/hapi-auth-bearer/raw/master/LICENSE"
     }
   ]
