@@ -11,40 +11,59 @@ This scheme requires the following options:
     - `callback` - the callback function with signature `function(err, credentials)` where:
         - `err` - an internal error.
         - `credentials` - a credentials object that gets passed back to the application in `request.auth.credentials`.
-          Return `null` or `undefined` to when the credentials are unknown (and not an error).  Also, credentials
-          object MUST contain a key `token` when using `base64: true` option so that we can validate the header
-          token from the token stored in the database. (This makes it so that you only need to index `secret` instead
-          of both `secret` and `token` for smaller storage.  Just simply do a find on secret, and pass back the token
-          value.
+          Return `null` or `undefined` to when the credentials are unknown (and not an error).
 
 - `base64` - Boolean value (defaults to `false` aka just accepts a raw token value).  This gives you the ability to pass
  back a base64 encoded authorization header: base64(SECRET:TOKEN)
     - i.e.) Bearer NTJlYjRmZmRmM2M3MjNmZjA1MTEwYmYxOjk5ZWQyZjdmMWRiNjBiZDBlNGY1ZjQ4ZjRhMWVhNWVjMmE4NzU2ZmU=
 
 
+#####  Using Token
 ```javascript
 var Hapi = require('hapi');
 var server = new Hapi.Server();
 
 var credentials = {
-  // without base64
   someSuperSecureToken: {
     user: { /** ... */ }
-  },
-  // for base64
+  }
+};
+
+var validateFunc = function (token, callback) {
+  if (!credentials[token]) {
+    callback(null, null);
+  } else {
+    callback(null, credentials[token].user);
+  }
+};
+
+server.pack.require('hapi-auth-bearer', function (err) {
+  server.auth.strategy('bearer', 'bearer', { validateFunc: validateFunc });
+});
+
+```
+
+#####  Using Base64 (secret & token)
+```javascript
+var Hapi = require('hapi');
+var server = new Hapi.Server();
+
+var credentials = {
   shhImASecret: {
     token: 'someSuperSecureToken',
     user: { /** ... */ }
   }
 };
 
-var validateFunc = function (id, callback) {
-  return callback(null, credentials[id]);
+var validateFunc = function (secret, token, callback) {
+  if (!credentials[secret] || credentials[secret].token !== token) {
+    callback(null, null);
+  } {
+    callback(null, credentials[secret].user);
+  }
 };
 
 server.pack.require('hapi-auth-bearer', function (err) {
-  server.auth.strategy('bearer', 'bearer', { validateFunc: validateFunc });
-
   server.auth.strategy('bearer-base64', 'bearer', {
     base64: true,
     validateFunc: validateFunc
