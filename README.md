@@ -33,7 +33,7 @@ var validateFunc = function (token, callback) {
   if (!credentials[token]) {
     callback(null, null);
   } else {
-    callback(null, credentials[token].user);
+    callback(null, credentials[token]);
   }
 };
 
@@ -59,7 +59,7 @@ var validateFunc = function (secret, token, callback) {
   if (!credentials[secret] || credentials[secret].token !== token) {
     callback(null, null);
   } {
-    callback(null, credentials[secret].user);
+    callback(null, credentials[secret]);
   }
 };
 
