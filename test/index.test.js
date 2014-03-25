@@ -30,6 +30,14 @@ describe('Bearer', function() {
     return callback(null, null);
   };
 
+  var validateBase64Func = function (id, token, callback) {
+    if (credentials[id]) {
+      return callback(credentials[id].err, credentials[id]);
+    }
+
+    return callback(null, null);
+  };
+
   var tokenHeader = function(token) {
     return 'Bearer ' + credentials[token].token;
   };
@@ -49,7 +57,7 @@ describe('Bearer', function() {
       assert.ifError(err);
 
       server.auth.strategy('bearer', 'bearer', { validateFunc: validateFunc });
-      server.auth.strategy('bearer-base64', 'bearer', { validateFunc: validateFunc, base64: true });
+      server.auth.strategy('bearer-base64', 'bearer', { validateFunc: validateBase64Func, base64: true });
 
       server.route([
         { method: 'POST', path: '/bearer', handler: handler, config: { auth: 'bearer' } },
