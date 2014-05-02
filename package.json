@@ -15,15 +15,15 @@
     "node": "0.10.x"
   },
   "dependencies": {
-    "boom": "2.x.x",
-    "hoek": "1.x.x",
-    "hawk": "2.x.x"
+    "boom": ">=2.x.x",
+    "hoek": ">=1.x.x",
+    "hawk": ">=2.x.x"
   },
   "peerDependencies": {
-    "hapi": "3.x.x"
+    "hapi": ">=3.x.x"
   },
   "devDependencies": {
-    "hapi": "3.x.x",
+    "hapi": ">=3.x.x",
     "mocha": "1.17.x",
     "istanbul": "0.2.x"
   },
