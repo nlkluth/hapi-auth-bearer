@@ -1,7 +1,7 @@
 {
   "name": "hapi-auth-bearer",
   "description": "A Hapi.js Bearer authentication plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Jordan Stout <j@jrdn.org>",
   "repository": "git://github.com/j/hapi-auth-bearer",
   "main": "index",
