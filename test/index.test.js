@@ -53,7 +53,7 @@ describe('Bearer', function() {
 
   var server = new Hapi.Server();
   before(function(done) {
-    server.pack.require('../', function (err) {
+    server.pack.register({ plugin: require('../')}, function (err) {
       assert.ifError(err);
 
       server.auth.strategy('bearer', 'bearer', { validateFunc: validateFunc });
